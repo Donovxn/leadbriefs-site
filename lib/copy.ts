@@ -4,14 +4,24 @@ export const ONE_LINE_OFFER =
 export const HERO = {
   eyebrow: "LeadBriefs",
   title: "Daily signal briefs for manual LinkedIn DMs.",
-  subtitle: ONE_LINE_OFFER,
+  subtitle: "Source-grounded lead and copy packs, delivered in a format you can send from today.",
+  icpLine: "Best for B2B teams selling to a defined ICP with clear exclusions.",
   bullets: [
-    "DM-only workflow. You send manually.",
-    "Source-grounded triggers with visible links.",
-    "Copy includes 2 openers + 2 follow-ups per lead.",
+    "You send every DM manually.",
+    "Each lead includes a why-now trigger with a visible source link.",
+    "Each lead includes 2 openers and 2 follow-ups.",
   ],
+  disclaimer: "No calls. Manual DMs only.",
   primaryCta: "DM ‘DEMO’ on LinkedIn",
   secondaryCta: "Pay for 48h demo",
+};
+
+export const PRICING = {
+  demoLabel: "48h demo",
+  weekLabel: "7-day sprint",
+  demoCta: "Buy 48h demo",
+  weekCta: "Buy 7-day sprint",
+  disclaimer: "Delivery guarantee only: make-up pack or pro-rated refund for missed SLA.",
 };
 
 export const PROOF_ITEMS = [
@@ -26,14 +36,14 @@ export const PROOF_ITEMS = [
     caption: "Sample copy (2 openers + 2 follow-ups)",
   },
   {
-    id: "qa_micro_report",
-    src: "/proof/qa_micro_report.png",
+    id: "qa_report_card",
+    src: "/proof/qa_report_card.png",
     caption: "QA micro-report",
   },
   {
-    id: "demo_card",
-    src: "/proof/demo_card.png",
-    caption: "Demo card",
+    id: "demo_pack",
+    src: "/proof/demo_pack.png",
+    caption: "48-hour demo pack",
   },
 ] as const;
 

@@ -1,7 +1,8 @@
-export const SITE_URL = "https://TODO-LEADBRIEFS-URL.com";
-export const LINKEDIN_PROFILE_URL = "https://linkedin.com/in/TODO-PROFILE";
-export const STRIPE_DEMO_URL = "https://buy.stripe.com/TODO";
+export const SITE_URL = "https://leadbriefs.com";
+export const LINKEDIN_PROFILE_URL = "https://www.linkedin.com/in/leadbriefs";
+export const STRIPE_DEMO_URL = "https://checkout.stripe.com/c/pay/leadbriefs-demo";
+export const STRIPE_WEEK_URL = "https://checkout.stripe.com/c/pay/leadbriefs-week";
 export const SUPPORT_EMAIL = "support@leadbriefs.com";
 
-export const DEMO_PRICE = "TODO_DEMO_PRICE";
-export const WEEK_PRICE = "TODO_WEEK_PRICE";
+export const DEMO_PRICE = "$500";
+export const WEEK_PRICE = "$1,750";

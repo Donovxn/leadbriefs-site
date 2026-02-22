@@ -25,6 +25,7 @@ export function HeroSection() {
         <p className="max-w-2xl text-pretty text-base text-muted-foreground sm:text-lg">
           {HERO.subtitle}
         </p>
+        <p className="text-sm text-muted-foreground">{HERO.icpLine}</p>
         <ul className="space-y-2 text-sm text-foreground sm:text-base">
           {HERO.bullets.map((point) => (
             <li key={point} className="flex items-start gap-2">
@@ -33,6 +34,7 @@ export function HeroSection() {
             </li>
           ))}
         </ul>
+        <p className="text-xs text-muted-foreground">{HERO.disclaimer}</p>
         <div className="flex flex-wrap gap-3 pt-2">
           <Button asChild size="lg" className="h-11 rounded-full px-6">
             <a href={LINKEDIN_PROFILE_URL} target="_blank" rel="noreferrer noopener">

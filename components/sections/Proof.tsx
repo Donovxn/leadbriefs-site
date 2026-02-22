@@ -24,6 +24,10 @@ export function ProofSection() {
     setBrokenIds((current) => (current.includes(id) ? current : [...current, id]));
   };
 
+  const markLoaded = (id: string) => {
+    setBrokenIds((current) => current.filter((item) => item !== id));
+  };
+
   return (
     <section id="proof" className="space-y-6">
       <div className="space-y-2">
@@ -74,7 +78,8 @@ export function ProofSection() {
                             alt={item.caption}
                             fill
                             sizes="(max-width: 768px) 100vw, 50vw"
-                            className="object-cover"
+                            className="object-contain"
+                            onLoad={() => markLoaded(item.id)}
                             onError={() => markBroken(item.id)}
                           />
                         )}
@@ -101,6 +106,7 @@ export function ProofSection() {
                         fill
                         sizes="(max-width: 1024px) 100vw, 80vw"
                         className="object-contain"
+                        onLoad={() => markLoaded(item.id)}
                         onError={() => markBroken(item.id)}
                       />
                     )}
